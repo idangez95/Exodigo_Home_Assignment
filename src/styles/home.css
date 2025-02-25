@@ -1,0 +1,117 @@
+/* Center the main container and add padding */
+.cocktail-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Center the search input */
+.search-input {
+  width: 50%;
+  max-width: 400px;
+  padding: 10px;
+  margin: 10px auto;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+  transition: border 0.3s ease;
+}
+
+.search-input:focus {
+  border-color: #007bff;
+}
+
+/* Grid layout with 3 columns per row */
+.cocktail-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+/* Styling for each cocktail card */
+.cocktail-card {
+  background: white;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.cocktail-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Ensure images are properly scaled */
+.cocktail-card img {
+  width: 75%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Change underline color to light gray */
+.cocktail-card a {
+  text-decoration: underline;
+  text-decoration-color: lightgray;
+  color: inherit;
+}
+
+.cocktail-card a:visited {
+  text-decoration: underline;
+  text-decoration-color: lightgray;
+  color: inherit;
+}
+
+.cocktail-card a:hover {
+  text-decoration: underline;
+  text-decoration-color: #007bff;
+}
+
+.cocktail-card h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+/* Pagination controls */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.pagination button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin: 0 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background 0.2s ease;
+}
+
+.pagination button:hover {
+  background-color: #0056b3;
+}
+
+.pagination button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.pagination span {
+  font-size: 18px;
+  font-weight: bold;
+}

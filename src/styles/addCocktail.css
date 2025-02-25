@@ -1,0 +1,129 @@
+.add-cocktail-container {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 30px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.add-cocktail-container h2 {
+  font-size: 26px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+label {
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+input,
+textarea,
+select {
+  width: 85%;
+  padding: 12px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border 0.3s ease-in-out;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: #4caf50;
+  outline: none;
+}
+
+textarea {
+  height: 120px;
+  resize: none;
+}
+
+button {
+  margin-top: 10px;
+  padding: 12px;
+  background: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s ease-in-out;
+}
+
+button:hover {
+  background: #45a049;
+}
+
+.ingredient-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.ingredient-row input {
+  flex-grow: 1;
+}
+
+.ingredient-row button {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: inherit;
+  color: white;
+  font-size: 18px;
+  border-radius: 6px;
+  transition: background 0.3s ease-in-out;
+  border: none;
+  cursor: pointer;
+}
+
+.ingredient-row button::after {
+  content: "🗑️";
+  font-size: 18px;
+}
+
+.ingredient-row button:hover {
+  background: #e63946;
+}
+
+.add-ingredient-btn {
+  background: #007bff;
+  align-self: flex-start;
+}
+
+.add-ingredient-btn:hover {
+  background: #0056b3;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+}
+
+.success-message {
+  color: green;
+  font-size: 14px;
+}
+
+.image-preview {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-top: 10px;
+  border: 2px solid #ddd;
+}
