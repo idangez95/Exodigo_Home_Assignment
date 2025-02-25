@@ -9,7 +9,6 @@ Built with **React Query, Zustand, and modern CSS styling**, this app ensures a 
 
 - 🔍 **Search for Cocktails** - Live search functionality using an external API.
 - 📜 **Cocktail Details** - View ingredients and instructions for each cocktail.
-- ⭐ **Favorite Cocktails** - Save favorite cocktails for easy access.
 - ✨ **Add Custom Cocktails** - Create your own drinks with an intuitive form.
 - 🖼️ **Image Upload Support** - Upload images or enter an image URL.
 - 🔄 **Pagination** - Navigate easily through cocktails in a paginated view.
@@ -20,7 +19,7 @@ Built with **React Query, Zustand, and modern CSS styling**, this app ensures a 
 
 ## 📂 Project Structure
 
-/src ├── components/ # Reusable UI components ├── pages/ # Main pages (Home, AddCocktail, Details) ├── store/ # Global state management (Zustand) ├── hooks/ # Custom React hooks (fetching data) ├── styles/ # CSS files for styling ├── types/ # TypeScript types ├── App.tsx # Main App component ├── main.tsx # React root entry point └── routes.tsx # React Router setup
+/src ├── components/ # Reusable UI components (CocktailCard, Pagination, FormInputs) ├── pages/ # Main pages (Home, AddCocktail, CocktailDetails) ├── store/ # Global state management (Zustand) ├── hooks/ # Custom React hooks (useFetchCocktails, useAddCocktail) ├── styles/ # CSS files for styling ├── types/ # TypeScript types ├── App.tsx # Main App component ├── main.tsx # React root entry point └── routes.tsx # React Router setup
 
 
 ---
@@ -30,48 +29,49 @@ Built with **React Query, Zustand, and modern CSS styling**, this app ensures a 
 ### **1️⃣ Clone the Repository**
 ```sh
 git clone https://github.com/idangez95/Exodigo_Home_Assignment.git
-cd Exodigo home assignment
+cd Exodigo_Home_Assignment
 
+2️⃣ Install Dependencies
 npm install
 # OR
 yarn install
 
+3️⃣ Start the Development Server
 npm run dev
 # OR
 yarn dev
 
-
 🔧 Technologies Used
-Tech	| Purpose
-React	| Frontend framework
-TypeScript	| Type safety and better development experience
-React | Router	Page navigation
-Zustand	| State management
-React | Query	Data fetching & caching
-Axios	| API calls
+Tech | Purpose
+React | Frontend framework
+TypeScript | Type safety and better development experience
+React | Router Page navigation
+Zustand | State management
+React | Query Data fetching & caching
+Axios | API calls
 CSS	| Custom styling
 
 📝 API Used
 The app fetches data from TheCocktailDB, a free API providing cocktail recipes.
+
 Example API Call
 GET https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita
-
 
 📖 How to Use
 🔍 Searching for a Cocktail
 Enter a name in the search bar.
-Results will be filtered dynamically.
+Results will be filtered dynamically as you type.
+Pagination allows you to navigate through results.
 ✨ Adding a Custom Cocktail
 Go to the "Add Cocktail" page.
 Fill out the form (name, ingredients, instructions).
 Upload an image or provide an image URL.
 Click Save Cocktail - it will appear in the list.
 🗑️ Removing Ingredients
-Click the 🗑️ (Trash Icon) next to an ingredient field.
+Click the 🗑️ (Trash Icon) next to an ingredient field to remove it.
 🐛 Known Issues & Future Improvements
 🔹 Improved Search Accuracy - Better filtering for user-created cocktails.
 🔹 More Styling Enhancements - Improve UI animations and transitions.
 🔹 Unit & Integration Tests - Implement Jest & React Testing Library.
-
 📜 License
 This project is licensed under the MIT License.
